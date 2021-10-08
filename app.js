@@ -4,11 +4,11 @@ var dragonDamage=0
 
 function dealDamage(damage,attack) {
     if (attack === "fire") {
-        dragonDamage -=1;
+        dragonDamage += damage -1;
     } else if (attack === "ice") {
-        dragonDamage += 1;
+        dragonDamage += damage+1;
     } else if (attack === "poison") {
-        dragonDamage = 4;
+        dragonDamage += 4;
     }
     ele.innerHTML="Dragon Damage: "+ dragonDamage;
 
@@ -33,4 +33,6 @@ document.body.querySelector(".poison").addEventListener("click",function() {
 
 
 });
+
+
 
