@@ -20,7 +20,7 @@ function dealDamage(damage,attack) {
 document.body.querySelector(".fire").addEventListener("click",function() {
     dealDamage(3,"fire")
 
-    ele.innerHTML = "Dragon Damage: " +dragonDamage;
+    //ele.innerHTML = "Dragon Damage: " +dragonDamage;
 });
 
 document.body.querySelector(".ice").addEventListener("click",function() {
